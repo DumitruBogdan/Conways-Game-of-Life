@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <TextField fx:id="inputText" layoutX="498.0" layoutY="64.0" prefHeight="26.0" prefWidth="45.0" />
+      <Text layoutX="498.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Width is:" />
+      <Button fx:id="setWidthButton" layoutX="487.0" layoutY="174.0" mnemonicParsing="false" onAction="#setWidthButtonPressed" text="Initialize" />
+      <TextField fx:id="aliveCells" layoutX="477.0" layoutY="135.0" prefHeight="26.0" prefWidth="92.0" />
+      <Text layoutX="444.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of alive cells is:" />
+      <ToggleButton fx:id="nextGenerations" layoutX="463.0" layoutY="237.0" mnemonicParsing="false" onAction="#nextGenerationsPressed" text="Next generations" />
+      <Button fx:id="saveCurrentGen" layoutX="445.0" layoutY="299.0" mnemonicParsing="false" onAction="#saveCurrentGenPressed" text="Save current generation" />
+      <Button fx:id="reload" layoutX="455.0" layoutY="357.0" mnemonicParsing="false" onAction="#reloadPressed" text="Reload the last save" />
+   </children>
+</AnchorPane>
